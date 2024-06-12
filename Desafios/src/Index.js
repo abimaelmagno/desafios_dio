@@ -27,3 +27,34 @@ console.log ("Novo valor com operadores de atribuição " + operacaoModulo)
 //Expressões aritmeticas
 operacaoModulo = (((operacaoModulo * 2) + 10 ) - 4) / 2
 console.log ("Novo valor com expressões artimeticas " + operacaoModulo)
+//operadores de comparação
+// = é atribuição, == é para compara valor, === compara o valor e o formato do conteúdo, !== é diferente    
+let number = "1"
+let resultado1 = number == 1
+let resultado2 = number === 1
+let resultado3 = number !== 1
+console.log (resultado1 + ", " + resultado2 + " e " + resultado3)
+//guardar o valor em uma variável de resultado TRUE?FALSE
+let cpfBloqueado = "123.445.222-45"
+let cpfUsuario = "222.111.222-09"
+let ehCPFBloqueado = cpfUsuario === cpfBloqueado
+console.log("O usuario está barrado ? " + ehCPFBloqueado)
+let idadeMinima = 18
+let idadeUsuario = 18
+let idadePermitidaValida = idadeUsuario >= idadeMinima
+console.log(idadePermitidaValida ? "Sim" : "Não")
+// AND ( && ) - 100 moedas coletadas E 1 item estrela, destacar que letras maiusculas e minisculas fazem diferença na comparação
+let moedasColetadas = 99
+let item = "estrela"
+let result = (moedasColetadas >= 100) && (item === "estrela")
+console.log(result? "Sim" : "Não")
+// OR ( || ) - nosso boneco só pode sair se tiver sem chuva OU com guarda Chuva
+let tempo = "chuva"
+let item2 = "guarda chuva"
+let podeSair = (tempo !== "chuva") || (item2 === "guarda chuva")
+console.log("nosso personagem pode sair ? " + podeSair ? "Sim" : "Não")
+// NOT  ( !) - nega uma afirmação, ! é uma negação e pode mudar a polidade de uma vairavel (se for sim, vira não)
+let tempo2 = "chuva"
+let horario = 8
+let resultado = !((tempo2 !== "chuva") && (horario > 6))
+console.log(resultado ? "Sim" : "Não")
