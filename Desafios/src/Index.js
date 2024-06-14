@@ -38,7 +38,7 @@ console.log (resultado1 + ", " + resultado2 + " e " + resultado3)
 let cpfBloqueado = "123.445.222-45"
 let cpfUsuario = "222.111.222-09"
 let ehCPFBloqueado = cpfUsuario === cpfBloqueado
-console.log("O usuario está barrado ? " + ehCPFBloqueado)
+console.log("O usuario está barrado ? " + ehCPFBloqueado ? "Sim" : "Não")
 let idadeMinima = 18
 let idadeUsuario = 18
 let idadePermitidaValida = idadeUsuario >= idadeMinima
@@ -58,3 +58,23 @@ let tempo2 = "chuva"
 let horario = 8
 let resultado = !((tempo2 !== "chuva") && (horario > 6))
 console.log(resultado ? "Sim" : "Não")
+//If, else
+let possuiOvos = true
+let itensComprados = ""
+if(possuiOvos){
+itensComprados = "Leite"
+}
+else{
+console.log("passou na sessão de congelados")
+itensComprados = "Lasanha congelada"
+}
+console.log("item comprado: " + itensComprados)
+//if,else if ,else
+let nivelDeFome = "3"
+if(nivelDeFome === 1){
+console.log("pouca fome")
+}else if(nivelDeFome === 2){
+console.log("muita fome")
+}else{
+console.log("Você comeria mais que o pica pau")
+}
