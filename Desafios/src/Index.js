@@ -99,3 +99,25 @@ switch (day) {
   default:
     console.log("Final de semana! Descanse e divirta-se!");
 }
+//for
+for (let contador = 1; contador <= 3; contador++) {
+    console.log(contador)
+    console.log("aumentando de um em um")
+  }
+// while
+let jogadas = 0;
+let cara = false;
+
+while(!cara) {
+  jogadas++;
+  cara = Math.random() < 0.5;
+}
+
+console.log(`A moeda caiu cara após ${jogadas} jogadas!`);
+// do while
+let bolinhosComidos = 0;
+
+do {
+  bolinhosComidos++;
+  console.log("Você comeu", bolinhosComidos, "bolinhos!");
+} while (bolinhosComidos < 5);
