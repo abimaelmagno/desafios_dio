@@ -112,12 +112,25 @@ while(!cara) {
   jogadas++;
   cara = Math.random() < 0.5;
 }
-
 console.log(`A moeda caiu cara após ${jogadas} jogadas!`);
 // do while
 let bolinhosComidos = 0;
-
 do {
   bolinhosComidos++;
   console.log("Você comeu", bolinhosComidos, "bolinhos!");
 } while (bolinhosComidos < 5);
+//função
+torrar()
+function torrar(){
+ console.log("torrando pão")
+ injetarPao()
+}
+function injetarPao(){
+	console.log("preparando para injetar o pão")
+    console.log("finalizado")
+}
+function saudar(nome) {
+  console.log("Olá, " + nome + "! Como você está?");
+}
+saudar("Pedrinho"); // Vai dizer Olá, Pedrinho! Como você está?
+saudar("Mariana"); // Vai dizer Olá, Mariana! Como você está?
